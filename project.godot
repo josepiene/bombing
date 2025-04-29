@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Bombg svol"
-run/main_scene="uid://dtg1krn7jfr2x"
+run/main_scene="uid://cbe2c14fiec2g"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+QuestionManager="*res://utilities/question_manager.gd"
 
 [editor]
 

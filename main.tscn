@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dtg1krn7jfr2x"]
+[gd_scene load_steps=7 format=3 uid="uid://dtg1krn7jfr2x"]
 
+[ext_resource type="Script" uid="uid://dw16jnj582f4m" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://be7ko4cjmxk7p" path="res://Free/Background/Green.png" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://bmpcapo62ruw8" path="res://Free/Terrain/Terrain (16x16).png" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://cth6f7ifnapcv" path="res://main_character.tscn" id="3_1bvp3"]
@@ -169,6 +170,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_lquwl")
 
 [node name="Node" type="Node"]
+script = ExtResource("1_1bvp3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
