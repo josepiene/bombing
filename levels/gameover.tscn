@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqj861dj6c2qb"]
+
+[ext_resource type="Script" uid="uid://btr7beixek6qh" path="res://levels/gameover.gd" id="1_acgp2"]
+
+[node name="Gameover" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_acgp2")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "gameover
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+paragraph_separator = "/"
+
+[node name="ReturnToMainMenu" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "return to main menu"
+
+[node name="QuitGame" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit Game"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ReturnToMainMenu" to="." method="_on_ReturnToMainMenu_press"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/QuitGame" to="." method="_on_QuitGame_press"]

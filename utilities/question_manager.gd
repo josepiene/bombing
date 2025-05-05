@@ -8,3 +8,11 @@ func load_questions(file_path):
 	
 func get_current_questions():
 	return questions[current_question_index]
+
+func reset_question():
+	current_question_index=0
+func get_next_questions():
+	current_question_index+=1
+	if current_question_index >= questions.size():
+		return null
+	return get_current_questions()

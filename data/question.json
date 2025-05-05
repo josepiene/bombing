@@ -10,5 +10,11 @@
 	"question": "What is the chemical symbol for Gold?",
 	"answers": ["Au", "Ag", "Fe", "Pb"],
 	"correct_index": 0
+  },
+  {
+	"subject": "It",
+	"question": "What device lets you type?",
+	"answers": ["Mouse", "Mic", "Speaker", "Keyboard"],
+	"correct_index": 3
   }
 ]
